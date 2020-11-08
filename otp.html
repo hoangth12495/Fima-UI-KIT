@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OTP · Fima</title>
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="signup.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center"></div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="row no-gutters login-row">
+            <div class="col align-self-center px-3 text-center">
+                <form class="form-signin mt-4 pt-2 px-3">
+                    <h4 class="form__title">Xác thực mã OTP</h4>
+                    <p class="form__desc">Vui lòng nhập 05 mã số đã được gửi về số di động của bạn</p>
+                    <input type="number" id="phone" class="form-control form-control-transparent text-center" placeholder="Nhập mã xác thực gồm 05 chữ số" maxlength="5" required>
+                    <div class="form__btn-action">
+                        <a href="updatepassword.html" class="btn btn-primary">Xác thực</a>
+                        <!-- <button href="updatepassword.html" class="btn btn-primary">Xác thực</button> -->
+                    </div>
+                    <button class="btn-link">Gửi lại mã trong <span id="time-resend">60</span>s</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          setTime();
+        });
+
+        function setTime() {
+            s = parseInt($("#time-resend").text());
+            if (s < 1) {
+                s = 60;
+            }
+            s--;
+            $("#time-resend").text(s);
+            setTimeout(function(){
+                setTime();
+            }, 1000);
+        };
+    </script>
+</body>
+</html>

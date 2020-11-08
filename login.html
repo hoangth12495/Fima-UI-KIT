@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update Password · Fima</title>
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="otp.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center"></div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="row no-gutters login-row">
+            <div class="col align-self-center px-3 text-center">
+                <form class="form-signin mt-4 pt-2 px-3">
+                    <h4 class="form__title">Chào mừng bạn trở lại</h4>
+                    <input type="password" id="password" class="form-control form-control-transparent text-center mb-3" placeholder="Nhập mật khẩu đăng nhập" required>
+                    <a href="forgotpassword.html" class="btn-link">Tôi đã quên mật khẩu?</a>
+                    <div class="form__btn-action">
+                        <!-- Button trigger modal -->
+                        <button id="verifyInfo" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVerifyInfo">Đăng nhập</button>
+                    </div>
+                    <button class="btn-link">Đăng xuất</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalVerifyInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content px-4  pt-3 pb-4">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h5 class="modal__title">Xác thực thông tin</h5>
+            <p>Bạn chưa có hạn mức vay cũng như cho vay, bạn có muốn cập nhật thông tin hồ sơ cá nhân</p>
+          </div>
+          <div class="modal-footer">
+            <a href="updateaccount.html" class="btn btn-primary mr-4">Đồng ý</a>
+            <button type="button" class="btn btn-white" data-dismiss="modal">Hủy</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $("#verifyInfo").on('click', function(e){
+            $(".wrapper").addClass("filter");
+        });
+
+        $('button[data-dismiss="modal"]').on('click', function(e){
+            $(".wrapper").removeClass("filter");
+        });
+    </script>
+</body>
+</html>

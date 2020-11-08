@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction · Fima</title>
+
+	<!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Launcher -->
+	<div class="vh-100 launcher-screen" style="display: none;">
+		<div class="launcher__logo">
+			<img src="img/logo-3x.png" alt="fima-logo">
+		</div>
+		<div class="launcher__bg">
+			<img src="img/background_01.png" alt="gima-background">
+		</div>
+	</div>
+	<!-- Launcher ends -->
+
+	<div class="wrapper">
+        <!-- Swiper intro -->
+        <div class="swiper-container introduction">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide overflow-hidden text-center">
+                    <div class="swiper__item">
+                    	<div class="swiper__img">
+                    		<img src="img/congnghetaichinh.png" alt="Công nghệ tài chính">
+                    	</div>
+                        <div class="swiper__info">
+                            <h4 class="swiper__title">Công nghệ tài chính</h4>
+                            <p class="swiper__desc">Đánh giá tín dụng xã hội bằng Bigdata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden text-center">
+                    <div class="swiper__item">
+                    	<div class="swiper__img">
+	                        <img src="img/dichvulinhhoat.png" alt="Dịch vụ linh hoạt">
+                        </div>
+                        <div class="swiper__info">
+                            <h4 class="swiper__title">Dịch vụ linh hoạt</h4>
+                            <p class="swiper__desc">Nạp, rút tiền, cho vay được đảm bảo tuyệt đối</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden text-center">
+                    <div class="swiper__item">
+                    	<div class="swiper__img">
+	                        <img src="img/dautuantoan.png" alt="Dịch vụ linh hoạt">
+                        </div>
+                        <div class="swiper__info">
+                            <h4 class="swiper__title">Đầu tư an toàn</h4>
+                            <p class="swiper__desc">Số tiền cho vay được cam kết đảm bảo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden text-center">
+                    <div class="swiper__item">
+                    	<div class="swiper__img">
+	                        <img src="img/quanlydedang.png" alt="Dịch vụ linh hoạt">
+                        </div>
+                        <div class="swiper__info">
+                            <h4 class="swiper__title">Quản lý dễ dàng</h4>
+                            <p class="swiper__desc">Gửi và nhận tiền nhanh chóng, chỉ cần xác thực qua OPT điện thoại</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide overflow-hidden text-center">
+                    <div class="swiper__item">
+                    	<div class="swiper__img">
+	                        <img src="img/quanlydedang.png" alt="Dịch vụ linh hoạt">
+                        </div>
+                        <div class="swiper__info">
+                            <h4 class="swiper__title">Ưu đãi hấp dẫn</h4>
+                            <p class="swiper__desc">Gửi và nhận tiền nhanh chóng, chỉ cần xác thực qua OPT điện thoại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper intro ends -->
+        
+        <!-- login buttons -->
+        <div class="row mx-0 bottom-button-container">
+            <div class="col">
+                <a href="signup.html" class="btn btn-primary">Đăng ký</a>
+                <!-- <button href="signup.html" class="btn btn-primary">Đăng ký</button> -->
+            </div>
+            <div class="col">
+                <a href="login.html" class="btn btn-white">Đăng nhập</a>
+                <!-- <button href="login.html" class="btn btn-white">Đăng nhập</button> -->
+            </div>
+        </div>
+        <!-- login buttons -->
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="lib/swiper/js/swiper.min.js"></script>
+
+    <!-- page level script -->
+    <script>
+        $(window).on('load', function() {
+            var swiper = new Swiper('.introduction', {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+            /* notification view and hide */
+            // setTimeout(function() {
+            //     $('.notification').addClass('active');
+            //     setTimeout(function() {
+            //         $('.notification').removeClass('active');
+            //     }, 3500);
+            // }, 500);
+            // $('.closenotification').on('click', function() {
+            //     $(this).closest('.notification').removeClass('active')
+            // });
+        });
+    </script>
+</body>
+</html>

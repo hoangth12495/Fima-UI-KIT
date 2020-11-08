@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update Password · Fima</title>
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper bg--grey">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="otp.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center header__title">Xác minh thông tin</div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="row no-gutters login-row">
+            <div class="col align-self-center px-3 text-center">
+                <form class="form-signin mt-4 pt-2 px-3">
+                    <input type="text" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Họ tên" required>
+                    <input type="text" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Giới tính" required>
+                    <input type="text" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Địa chỉ" required>
+                    <input type="text" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Thành phố" required>
+                    <input type="text" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Tình trạng hôn nhân" required>
+                    <input type="number" id="" class="form-control form-control-transparent mb-3 px-3" placeholder="Bạn có bao nhiêu con?" required>
+                    <div class="row">
+                        <div class="col">
+                            <div class="btn__upload-img">
+                                <img src="img/img-blank.png" alt="">
+                            </div>
+                            <p>CMND mặt trước</p>
+                        </div>
+                        <div class="col">
+                            <div class="btn__upload-img">
+                                <img src="img/img-blank.png" alt="">
+                            </div>
+                            <p>CMND mặt sau</p>
+                        </div>
+                    </div>
+                    <div class="form__btn-action mt-2">
+                        <a href="login.html" class="btn btn-primary">Cập nhật</a>
+                        <!-- <button class="btn btn-primary">Cập nhật</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</body>
+</html>
