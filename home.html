@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hợp đồng</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper bg--light">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="home.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center header__title">Hợp đồng</div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="container">
+            <div class="card bg--white">
+                <div class="card__body">
+                    <div class="row">
+                        <div class="col">
+                            <p class="card__desc text-mute">Số dư tài khoản</p>
+                            <h4 class="text-blue text-600 f-16">120,000 VNĐ</4>
+                        </div>
+                        <div class="col text-right">
+                            <p class="card__desc text-mute">Fcoin</p>
+                            <h4 class="text-blue text-600 f-16">6830</h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <div class="card__item text-center">
+                            <div class="card__img img-40">
+                                <img src="img/product-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Sản phẩm</p>
+                        </div>
+                        <div class="card__item text-center">
+                            <div class="card__img img-40">
+                                <img src="img/policy-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Chính sách</p>
+                        </div>
+                        <div class="card__item text-center">
+                            <div class="card__img img-40">
+                                <img src="img/contract-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Hợp đồng</p>
+                        </div>
+                        <div class="card__item text-center">
+                            <div class="card__img img-40">
+                                <img src="img/report-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Báo cáo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="subtitle mt-4">Dịch vụ nổi bật</h5>
+            <div class="row mt-2">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper-container service-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__body text-center px-0">
+                                        <div class="card__img img-40">
+                                            <img src="img/finance-icon.png" alt="" class="card__logo">
+                                        </div>
+                                        <p class="card__desc mt-2">Tài chính</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__body text-center px-0">
+                                        <div class="card__img img-40">
+                                            <img src="img/insurrance-icon.png" alt="" class="card__logo">
+                                        </div>
+                                        <p class="card__desc mt-2">Bảo hiểm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__body text-center px-0">
+                                        <div class="card__img img-40">
+                                            <img src="img/invest-icon.png" alt="" class="card__logo">
+                                        </div>
+                                        <p class="card__desc mt-2">Đầu tư</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card__body text-center px-0">
+                                        <div class="card__img img-40">
+                                            <img src="img/invest-icon.png" alt="" class="card__logo">
+                                        </div>
+                                        <p class="card__desc mt-2">Thanh toán</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="lib/swiper/js/swiper.min.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            var swiper = new Swiper('.service-slide', {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                // pagination: {
+                //     el: '.swiper-pagination',
+                // },
+            });
+        });
+    </script>
+</body>
+</html>

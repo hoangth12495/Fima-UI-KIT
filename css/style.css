@@ -105,6 +105,10 @@ img {
 	background-color: #fff;
 }
 
+.bg--transparent {
+	background-color: transparent;
+}
+
 .border-dash {
 	border: 1px dashed var(--primary-elem);
 }
@@ -180,6 +184,10 @@ img {
 	font-weight: 600;
 }
 
+.text-mute {
+	opacity: 0.7;
+}
+
 .text-white {
 	color: #fff;
 }
@@ -246,6 +254,26 @@ img {
 }
 
 /*------- Form Contract --------*/
+.input-group {
+	border-radius: .75rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group .form-control {
+	position: relative; */
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%; 
+    min-width: 0; 
+    margin-bottom: 0;
+}
+
 .form-control {
 	border-radius: .75rem;
 	border: none;
@@ -255,7 +283,7 @@ img {
 
 .subtitle {
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 20px;
 	color: var(--primary-text);
 }
@@ -332,7 +360,7 @@ img {
 	text-transform: uppercase;
 }
 
-.modal-backdrop {
+.filter .modal-backdrop {
 	background-color: #fff;
 }
 
@@ -383,6 +411,10 @@ img {
 }
 
 /* Swiper */
+.service-slide .swiper-slide {
+	width: 100px;
+}
+
 .swiper__item {
     padding: 200px 15px 90px;
     top: 41px;

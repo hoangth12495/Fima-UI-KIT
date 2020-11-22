@@ -26,7 +26,7 @@
         <div class="header">
             <div class="row no-gutters">
                 <div class="col-auto">
-                    <a href="create_contract-2.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                    <a href="create_contract-3.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
                 </div>
                 <div class="col text-center header__title">Tạo hợp đồng (4/4)</div>
                 <div class="col-auto">
@@ -37,7 +37,7 @@
 
         <div class="container">
             <div class="card bg--white mt-4">
-                <div href="create_contract-1.html" class="card__body">
+                <div class="card__body">
                     <dl class="row">
                     	<dt class="col">Giá sản phẩm</dt>
                     	<dd class="col-auto text-right text-600 f-16">1.400.000 VNĐ</dd>
@@ -61,18 +61,54 @@
                     </dl>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-4">
                 <label for="" class="subtitle mb-2">Mã giảm giá</label>
-                <div class="input-group">
+                <div class="input-group bg--white">
                     <input type="text" class="form-control" placeholder="Nhập mã giảm giá">
-                    <button><i class="material-icons pr-2">confirmation_number</i>Áp dụng</button>
+                    <div class="input-group-append">
+                        <button class="bg--transparent d-flex justify-content-center align-items-center border-0 text-blue"><i class="material-icons pr-2">confirmation_number</i>Áp dụng</button>
+                    </div>
+                    
                 </div>
-                <a href="contract-owner.html" class="add-object bg--white d-flex justify-content-center align-items-center">
-                    <i class="material-icons pr-2">add_circle_outline</i> Thêm chủ hợp đồng
-                </a>
             </div>
-            <a href="create_contract-4.html" class="btn btn-primary mt-4">Thanh toán</a>
+            <!-- <a href="create_contract-4.html" class="btn btn-primary mt-4">Thanh toán</a> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#payment-method">Thanh toán</button>
         </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="payment-method" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog mx-4" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="form-group">
+                <label for="" class="subtitle mb-3">Chọn phương thức thanh toán</label>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Thanh toán bằng ví
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Thanh toán sau
+                    </label>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer px-3">
+            <!-- <button type="button" class="btn btn-white mr-4" data-dismiss="modal">Hủy</button> -->
+            <a href="#" class="btn btn-primary">Tiếp tục</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- jquery, popper and bootstrap js -->
     <script src="js/jquery-3.3.1.min.js"></script>
