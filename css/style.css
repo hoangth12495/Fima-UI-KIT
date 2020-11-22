@@ -1,11 +1,57 @@
 /*================================
+			RESET CSS
+================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*================================
 			TEMPLATE
 ================================*/
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
 
 :root{
 	--primary-bg: #F4FAFF;
@@ -15,6 +61,27 @@ img {
 	--secondary-text: #4F6C8D;
 	--color-grey: #E8ECF3;
 	--color-link: #0370EF;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .wrapper {
@@ -30,6 +97,17 @@ img {
 	background: var(--secondary-bg);
 }
 
+.bg--light {
+	background-color: #F6F6F6;
+}
+
+.bg--white {
+	background-color: #fff;
+}
+
+.border-dash {
+	border: 1px dashed var(--primary-elem);
+}
 .btn {
 	border: 1px solid var(--primary-elem);
 	border-radius: 4px;
@@ -63,11 +141,24 @@ img {
 	position: relative;
 }
 
-.btn-back i {
+.btn-back i,.btn-add-contract i {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.btn-add-contract {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-elem);
+    border: none;
+    border-radius: 50%;
+    color: #FFF;
+    line-height: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .btn-link {
@@ -83,6 +174,40 @@ img {
 	height: 150px;
 	margin: 1rem auto;
 	padding: 58px 40px;
+}
+
+.text-600 {
+	font-weight: 600;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-blue {
+	color: var(--primary-elem);
+}
+
+.text-primary {
+	color: var(--primary-text)!important;
+}
+
+.text-secondary, .text-secondary span {
+	color: #424243;
+}
+
+.f-16 {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.f-18 {
+	font-size: 18px;
+	line-height: 25px;
+}
+/*------- Form elements --------*/
+.form-signin .form-control {
+	border-radius: 0.25rem;
 }
 
 .form-control-transparent, .form-control-transparent:focus {
@@ -120,6 +245,53 @@ img {
 	margin: 32px auto;
 }
 
+/*------- Form Contract --------*/
+.form-control {
+	border-radius: .75rem;
+	border: none;
+	font-size: 14px;
+	height: 44px;
+}
+
+.subtitle {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	color: var(--primary-text);
+}
+
+.add-object {
+	color: var(--primary-elem);
+    display: inline-block;
+    width: 100%;
+    border-radius: 12px;
+    line-height: 44px;
+    position: relative;
+}
+
+.select-customize {
+	position: relative;
+}
+
+.select-customize select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.select-customize i {
+	color: #BFBFBF;
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%);
+}
+
+.search {
+	background: url(../img/search.png) no-repeat center left #fff;
+	padding-left: 45px;
+}
+/*---------- Modal ----------*/
 .header {
 	background-color: var(--primary-elem);
 	padding: 11px 0;
@@ -129,7 +301,6 @@ img {
 	color: #fff;
 	font-size: 17px;
 	font-weight: 600;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
@@ -177,6 +348,7 @@ img {
 	font-size: 20px;
 	font-weight: 600;
 }
+
 /*======================================
 			INTRODUCTION PAGE
 ======================================*/
@@ -261,4 +433,69 @@ img {
     position: absolute;
     bottom: 65px;
     width: 100%;
+}
+
+/*============================
+		CONTRACT PAGE
+==============================*/
+.img-40 {
+	width: 40px;
+	height: 40px;
+}
+
+.img-50 {
+	width: 50px;
+	height: 50px;
+}
+
+.bg--wellness {
+	background: #FF7648 url(../img/wellness-bg.png) center center;
+	background-size: cover;
+}
+
+.bg--accident {
+	background: #FEBA4F url(../img/accident-bg.png) center center;
+	background-size: cover;
+}
+
+.bg--cancer {
+	background: #8F98FF url(../img/cancer-bg.png) center center;
+	background-size: cover;
+}
+
+.bg--health {
+	background: #4BBE5C url(../img/health-bg.png) center center;
+	background-size: cover;
+}
+
+.card {
+	border: none;
+	border-radius: 12px;
+}
+
+.card__body {
+	padding: 20px;
+}
+
+.card__img {
+	margin: 0 auto;
+}
+
+.card__title {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.card__desc {
+	font-size: 12px;
+}
+
+.card__desc b {
+	font-weight: 600;
+	line-height: 14px;
+}
+
+.card__link {
+	color: #747474;
+	text-decoration: underline;
 }
