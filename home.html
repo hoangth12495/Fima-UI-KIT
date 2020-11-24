@@ -82,9 +82,9 @@
                 <div class="container">
                     <!-- Swiper -->
                     <div class="swiper-container service-slide">
-                        <div class="swiper-wrapper">
+                        <div id="accordion" class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="card">
+                                <div class="card" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
                                     <div class="card__body text-center px-0">
                                         <div class="card__img img-40">
                                             <img src="img/finance-icon.png" alt="" class="card__logo">
@@ -122,6 +122,33 @@
                                         <p class="card__desc mt-2">Thanh toán</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Collapse -->
+                    <div id="collapseProduct" class="collapse card bg--white mt-2" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body py-2">
+                            <div class="row">
+                                <div class="col">Sản phẩm tài chính nổi bật</div>
+                                <div class="col-auto text-right"><a href="#" class="text-blue">Xem tất cả</a></div>
+                            </div>
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="card__img img-30">
+                                        <img src="img/borrow-icon.png" alt="" class="card__logo">
+                                    </div>
+                                </div>
+                                <div class="col pl-0 m-auto"><p>Vay</p></div>
+                            </div>
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="card__img img-30">
+                                        <img src="img/loan-icon.png" alt="" class="card__logo">
+                                    </div>
+                                </div>
+                                <div class="col pl-0 m-auto"><p>Cho vay</p></div>
                             </div>
                         </div>
                     </div>
