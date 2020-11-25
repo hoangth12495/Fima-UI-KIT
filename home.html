@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hợp đồng</title>
+	<title>Home</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper bg--light">
+    <div class="wrapper bg--light home">
         <!-- header -->
         <div class="header">
             <div class="row no-gutters">
@@ -77,10 +77,11 @@
                     </div>
                 </div>
             </div>
+
             <h5 class="subtitle mt-4">Dịch vụ nổi bật</h5>
             <div class="row mt-2">
                 <div class="container">
-                    <!-- Swiper -->
+                    <!-- Service Swiper -->
                     <div class="swiper-container service-slide">
                         <div id="accordion" class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -154,6 +155,95 @@
                     </div>
                 </div>
             </div>
+
+            <h5 class="subtitle mt-4">Tin tức nổi bật</h5>
+            <!-- News Swiper -->
+            <div class="swiper-container news-slide mt-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card overflow-hidden text-center">
+                        <div class="card__img">
+                            <img src="img/news-1.png" alt="Bảo hiểm nhân thọ Italia">
+                        </div>
+                    </div>
+                    <div class="swiper-slide card overflow-hidden text-center">
+                        <div class="card__img">
+                            <img src="img/news-1.png" alt="Bảo hiểm nhân thọ Italia">
+                        </div>
+                    </div>
+                    <div class="swiper-slide card overflow-hidden text-center">
+                        <div class="card__img">
+                            <img src="img/news-1.png" alt="Bảo hiểm nhân thọ Italia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="subtitle mt-4">Hồ sơ cần xử lý</h5>
+            <p class="text-mute mt-2">Chưa có hồ sơ cần xử lý</p>
+
+            <h5 class="subtitle mt-4">Hướng dẫn</h5>
+            <div class="row mt-2">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/benefits-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Hướng dẫn người mới</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 px-0">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/recharge-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Nạp tiền</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/withdrawal-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Rút tiền</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/question-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Câu hỏi nổi bật</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 px-0">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/identity-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Tài khoản</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card__body text-center px-0">
+                            <div class="card__img img-40">
+                                <img src="img/guide-icon.png" alt="" class="card__logo">
+                            </div>
+                            <p class="card__desc mt-2">Hướng dẫn sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -166,12 +256,16 @@
 
     <script>
         $(window).on('load', function() {
-            var swiper = new Swiper('.service-slide', {
+            var serviceSwiper = new Swiper('.service-slide', {
                 slidesPerView: 'auto',
                 spaceBetween: 8,
-                // pagination: {
-                //     el: '.swiper-pagination',
-                // },
+            });
+
+            var newsSwiper = new Swiper('.news-slide', {
+                spaceBetween: 15,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
             });
         });
     </script>

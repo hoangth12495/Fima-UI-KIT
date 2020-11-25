@@ -204,14 +204,19 @@ img {
 	color: #424243;
 }
 
-.f-16 {
-	font-size: 16px;
-	line-height: 22px;
-}
+.f-12 {	font-size: 12px; }
 
-.f-18 {
-	font-size: 18px;
-	line-height: 25px;
+.f-15 { font-size: 15px; }
+
+.f-16 { font-size: 16px; line-height: 22px; }
+
+.f-18 { font-size: 18px; line-height: 25px; }
+
+.no-shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
 }
 /*------- Form elements --------*/
 .form-signin .form-control {
@@ -279,6 +284,16 @@ img {
 	border: none;
 	font-size: 14px;
 	height: 44px;
+}
+
+.form-control:focus {
+	border-color: unset;
+	box-shadow: unset;
+} 
+
+.input-line {
+	border-radius: unset;
+	border-bottom: 1px solid #b4b4b4;
 }
 
 .subtitle {
@@ -415,7 +430,7 @@ img {
 	width: 100px;
 }
 
-.swiper__item {
+.introduction .swiper__item {
     padding: 200px 15px 90px;
     top: 41px;
     height: 100%;
@@ -423,11 +438,11 @@ img {
     bottom: 0;
 }
 
-.swiper__img {
+.introduction .swiper__img {
 	height: 220px;
 }
 
-.swiper__title {
+.introduction .swiper__title {
 	color: var(--primary-text);
     font-size: 22px;
     font-weight: 600;
@@ -436,18 +451,18 @@ img {
     padding: 0 50px;
 }
 
-.swiper__desc {
+.introduction .swiper__desc {
 	color: var(--secondary-text);
     font-size: 17px;
     min-height: 60px;
     margin: 0;
 }
 
-.swiper__info {
+.introduction .swiper__info {
     padding: 15px 35px;
 }
 
-.swiper-pagination {
+.introduction .swiper-pagination {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -510,6 +525,10 @@ img {
 	border-radius: 12px;
 }
 
+.home .card {
+	border-radius: 6px;
+}
+
 .card__body {
 	padding: 20px;
 }
@@ -535,4 +554,14 @@ img {
 .card__link {
 	color: #747474;
 	text-decoration: underline;
+}
+
+/*=======================
+		RESPONSIVE
+=======================*/
+@media (max-width: 576px) {
+	.modal-dialog {
+	    /*max-width: 500px;*/
+	    margin: auto 2rem;
+	}
 }
