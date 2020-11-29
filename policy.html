@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chính sách</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper bg--light">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="create_contract-3.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center header__title">Chính sách</div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="container py-4">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#commissions">Hoa hồng trực tiếp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#commissions-introduction">Hoa hồng giới thiệu</a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="commissions" class="tab-pane active"><br>
+              <p>Hoa hồng trực tiếp được tính khi bạn trực tiếp khai thác khách hàng có nhu cầu mua bảo hiểm hoặc đầu tư cho vay các khách hàng có nhu cầu vay thành công trên app Fima.</p>
+              <p>Fima có 2 loại hình có Hoa hồng trực tiếp là Bảo hiểm và Đầu tư.</p>
+              <p>Chính sách hoa hồng cho từng loại:</p>
+
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#insurance">Bảo hiểm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#invest">Sản phẩm đầu tư</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="insurance" class="tab-pane active">
+                  <p class="my-3">Hoa hồng cho sản phẩm bảo hiểm được tính theo bảng sau</p>
+                  <div class="card">
+                    <div class="card__body">
+                      <div class="card__img img-50">
+                        <img src="img/vbi-logo.png" alt="" class="card__logo">
+                      </div>
+                      <div class="table-responsive mb-4">
+                        <table class="table-policy">
+                          <thead>
+                            <tr class="text-600 f-15">
+                              <th>Sản phẩm</th>
+                              <th>Hoa hồng trực tiếp</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Bảo hiểm sức khỏe</td>
+                              <td class="text-center">15%</td>
+                            </tr>
+                            <tr>
+                              <td>Bảo hiểm ung thư</td>
+                              <td class="text-center">20%</td>
+                            </tr>
+                            <tr>
+                              <td>Bảo hiểm hỗ trợ viện phí</td>
+                              <td class="text-center">20%</td>
+                            </tr>
+                            <tr>
+                              <td>Bảo hiểm tai nạn</td>
+                              <td class="text-center">28%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p class="f-12 font-italic mb-4">Hoa hồng tính theo % giá trị hợp đồng bảo hiểm bán được và trả tiền trên ví tích lũy ngay khi hoàn tất giao dịch.</p>
+                      <p>Xem chi tiết sản phẩm <a href="#" class="card__link text-blue">tại đây</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="invest" class="tab-pane">
+                  <p>Hoa hồng = Giá trị đầu tư x 3%</p>
+                </div>
+              </div>
+            </div>
+            <div id="commissions-introduction" class="tab-pane fade"><br>
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

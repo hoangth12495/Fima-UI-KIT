@@ -189,11 +189,11 @@ img {
 }
 
 .text-white {
-	color: #fff;
+	color: #fff!important;
 }
 
 .text-blue {
-	color: var(--primary-elem);
+	color: var(--primary-elem)!important;
 }
 
 .text-primary {
@@ -334,6 +334,12 @@ img {
 	background: url(../img/search.png) no-repeat center left #fff;
 	padding-left: 45px;
 }
+
+/*---------- Table ----------*/
+.table-policy td, .table-policy th{
+	padding: 0.25rem 0;
+}
+
 /*---------- Modal ----------*/
 .header {
 	background-color: var(--primary-elem);
@@ -525,8 +531,25 @@ img {
 	border-radius: 12px;
 }
 
+.home {
+	padding-bottom: 85px;
+}
+
 .home .card {
 	border-radius: 6px;
+}
+
+.guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guide .card {
+    width: 32%;
+    height: 110px;
+    margin-bottom: 8px;
 }
 
 .card__body {
@@ -556,6 +579,16 @@ img {
 	text-decoration: underline;
 }
 
+/*----------Menu Footer --------*/
+.menu-footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding-bottom: env(safe-area-inset-bottom);
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
 /*=======================
 		RESPONSIVE
 =======================*/
