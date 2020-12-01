@@ -106,7 +106,7 @@ img {
 }
 
 .bg--transparent {
-	background-color: transparent;
+	background-color: transparent!important;
 }
 
 .border-dash {
@@ -218,6 +218,54 @@ img {
     -moz-box-shadow: none;
     -ms-box-shadow: none;
 }
+
+/*------- Custom Tabs --------*/
+.nav-tabs .nav-link {
+	border: none;
+}
+
+.nav-tabs .nav-link.active {
+	color: var(--primary-elem);
+	background-color: transparent;
+	border-bottom: 1px solid var(--primary-elem);
+	font-weight: 600;
+}
+
+.nav-link {
+	color: #979797;
+}
+
+.tab-slider {
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+	border-radius: 50px;
+	position: relative;
+}
+
+.tab-slider li{
+	line-height: 24px;
+	position:relative;
+	z-index:1;
+	transition: all 350ms ease-in-out;
+}
+
+.tab-slider .nav-link.active {
+	color: #fff;
+	border: none;
+}
+
+.tab-slider .selector{
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all 350ms ease-in-out;
+  background-color: var(--primary-elem);
+}
+
 /*------- Form elements --------*/
 .form-signin .form-control {
 	border-radius: 0.25rem;
@@ -584,11 +632,23 @@ img {
     width: 100%;
     height: auto;
     position: fixed;
-    padding-bottom: env(safe-area-inset-bottom);
     bottom: 0;
     left: 0;
     z-index: 9;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
 }
+
+.menu-footer .card__item {
+	color: #81878f;
+}
+
+.menu-footer i {
+	width: 24px;
+}
+
 /*=======================
 		RESPONSIVE
 =======================*/

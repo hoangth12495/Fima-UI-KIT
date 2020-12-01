@@ -36,11 +36,11 @@
         <!-- header ends -->
 
         <div class="container py-4">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
+          <ul class="row no-gutters text-center nav nav-tabs border-0">
+            <li class="col-6">
               <a class="nav-link active" data-toggle="tab" href="#commissions">Hoa hồng trực tiếp</a>
             </li>
-            <li class="nav-item">
+            <li class="col-6">
               <a class="nav-link" data-toggle="tab" href="#commissions-introduction">Hoa hồng giới thiệu</a>
             </li>
           </ul>
@@ -51,21 +51,22 @@
               <p>Fima có 2 loại hình có Hoa hồng trực tiếp là Bảo hiểm và Đầu tư.</p>
               <p>Chính sách hoa hồng cho từng loại:</p>
 
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
+              <ul class="row no-gutters text-center nav nav-tabs tab-slider my-3 bg--white">
+                <div class="selector"></div>
+                <li class="col-6">
                   <a class="nav-link active" data-toggle="tab" href="#insurance">Bảo hiểm</a>
                 </li>
-                <li class="nav-item">
+                <li class="col-6">
                   <a class="nav-link" data-toggle="tab" href="#invest">Sản phẩm đầu tư</a>
                 </li>
               </ul>
 
               <div class="tab-content">
                 <div id="insurance" class="tab-pane active">
-                  <p class="my-3">Hoa hồng cho sản phẩm bảo hiểm được tính theo bảng sau</p>
+                  <p class="mb-3">Hoa hồng cho sản phẩm bảo hiểm được tính theo bảng sau</p>
                   <div class="card">
                     <div class="card__body">
-                      <div class="card__img img-50">
+                      <div class="card__img img-50 mb-3">
                         <img src="img/vbi-logo.png" alt="" class="card__logo">
                       </div>
                       <div class="table-responsive mb-4">
@@ -117,5 +118,11 @@
     <!-- jquery, popper and bootstrap js -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $(".tab-slider li").click(function() { 
+        var itemPos = $(this).position();
+        $(".selector").css({"left":itemPos.left + "px"});
+      });     
+    </script>
 </body>
 </html>
