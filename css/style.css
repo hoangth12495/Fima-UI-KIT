@@ -682,6 +682,15 @@ img {
 	transform: rotate(-165deg);
 }
 
+.customer-record .close {
+    background-color: #dc3545;
+    color: #fff;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 4px;
+}
 /*=======================
 		RESPONSIVE
 =======================*/

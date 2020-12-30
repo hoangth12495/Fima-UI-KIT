@@ -79,9 +79,9 @@
 	                    </div>
                     </div>
                     <button class="add-object d-flex justify-content-center align-items-center border-dash" onclick="addNewCustomer()">
-                    <i class="material-icons pr-2">add_circle_outline</i> Thêm mới đối tượng được bảo hiểm
-                </button>
-                <a href="create_contract-3.html" class="btn btn-primary my-4">Lưu</a>
+	                    <i class="material-icons pr-2">add_circle_outline</i> Thêm mới đối tượng được bảo hiểm
+	                </button>
+	                <a href="create_contract-3.html" class="btn btn-primary my-4">Lưu</a>
                 </form>
                 
             </div>
@@ -93,8 +93,9 @@
 
     <script>
     	function addNewCustomer() {
-    		var customer_info = '<hr class="p3"><div class="customer-record">'
-    					+'<div class="form-group">'
+    		var customer_info = '<div class="customer-record"><hr class="p3">'
+    					+'<button class="close" onclick="deleteCustomer(this)">Xóa</button>'
+    					+'<div class="form-group" style="clear:both;">'
 	                        +'<label for="" class="form-label mb-2">Họ tên</label>'
 	                        +'<input type="text" class="form-control" placeholder="Họ tên">'
 	                    +'</div>'
@@ -134,7 +135,13 @@
 	                    +'</div>';
 	                +'</div>';
 
-	        $("#add-customer .customer-record").after(customer_info);
+	        $("#add-customer .customer-record:nth-last-child(3)").after(customer_info);
+    	}
+
+    	function deleteCustomer(elem) {
+    		var _elem = $(elem);
+    		// console.log(_elem.parent());
+    		_elem.parent().remove();
     	}
     </script>
 </body>
