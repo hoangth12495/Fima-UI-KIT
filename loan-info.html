@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xác nhận thanh toán</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="create_contract-3.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center header__title">Vay tiền</div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <div class="container mt-3">
+          <div class="card bg--white mt-4">
+            <div href="create_contract-1.html" class="card__body">
+              <form action="">
+                <label for="">Mục đích khoản vay</label>
+                <p>Vay tiền mặt</p>
+                <label for="">Số tiền muốn vay</label>
+                <p class="text-blue text-600 f-15 mt-1">1.400.000 VNĐ</p>
+                <p>hoặc nhập số tiền muốn vay</p>
+                <input type="number" class="form-control border-solid" placeholder="">
+                <label for="">Thời gian vay</label>
+                <div class="row data-time">
+                  <div class="col-4">
+                    <button data-time="5">5 ngày</button>
+                  </div>
+                  <div class="col-4">
+                    <button data-time="10">10 ngày</button>
+                  </div>
+                  <div class="col-4">
+                    <button data-time="15">15 ngày</button>
+                  </div>
+                  <div class="col-4">
+                    <button data-time="20">20 ngày</button>
+                  </div>
+                  <div class="col-4">
+                    <button data-time="30">30 ngày</button>
+                  </div>
+                  <div class="col-4">
+                    <button data-time="60">60 ngày</button>
+                  </div>
+                </div>
+                <button type="button" class="btn my-4">Gửi yêu cầu</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
