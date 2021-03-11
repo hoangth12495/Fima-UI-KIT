@@ -79,6 +79,11 @@ a:hover {
 	text-decoration: none;
 }
 
+b {
+	font-weight: 600;
+	line-height: 14px;
+}
+
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -231,7 +236,7 @@ img {
 	font-weight: 600;
 }
 
-.nav-link {
+.nav-link, .nav-link:hover {
 	color: #979797;
 }
 
@@ -615,11 +620,6 @@ img {
 
 .card__desc {
 	font-size: 12px;
-}
-
-.card__desc b {
-	font-weight: 600;
-	line-height: 14px;
 }
 
 .card__link {
