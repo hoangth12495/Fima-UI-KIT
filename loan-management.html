@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quản lý hợp đồng vay</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="lib/materializeicon/material-icons.css">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper bg--light">
+        <!-- header -->
+        <div class="header">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <a href="create_contract-3.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                </div>
+                <div class="col text-center header__title">Quản lý hợp đồng vay</div>
+                <div class="col-auto">
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- Tab panes -->
+        <ul class="row no-gutters text-center nav nav-tabs border-0 bg--white card-shadow">
+          <li class="col-6">
+            <a class="nav-link py-3 border-right active" data-toggle="tab" href="#unpaid">Chưa thanh toán</a>
+          </li>
+          <li class="col-6">
+            <a class="nav-link py-3" data-toggle="tab" href="#paid">Đã thanh toán</a>
+          </li>
+        </ul>
+        <div class="container tab-content">
+          <div id="unpaid" class="tab-pane active">
+            <div class="card bg--white mt-3">
+              <div href="create_contract-1.html" class="card__body">
+                <h5 class="card__title text-primary">Abank Việt Nam</h5>
+                <dl class="row mt-2">
+                  <dt class="col-8 text-secondary">Mã HĐ: FIMA-HDV-2021/02/0001</dt>
+                  <dd class="col-4 text-right text-secondary text-600">28/02/2021</dd>
+                </dl>
+                <dl class="row mt-2">
+                  <dt class="col-6 text-primary f-16">1,000,000 VNĐ</dt>
+                  <dd class="col-6 text-right text-blue f-16"><b>Còn 29</b>/30 ngày</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="paid" class="tab-pane fade"><br>
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- jquery, popper and bootstrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $(".tab-slider li").click(function() { 
+        var itemPos = $(this).position();
+        $(".selector").css({"left":itemPos.left + "px"});
+      });     
+    </script>
+</body>
+</html>
