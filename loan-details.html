@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper bg--white">
+    <div class="wrapper">
         <!-- header -->
         <div class="header">
             <div class="row no-gutters">
                 <div class="col-auto">
-                    <a href="create_contract-3.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
+                    <a href="loan-info.html" class="btn-back"><i class="material-icons">chevron_left</i></a>
                 </div>
                 <div class="col text-center header__title">Xác nhận khoản vay</div>
                 <div class="col-auto">
@@ -36,42 +36,46 @@
         <!-- header ends -->
 
         <div class="container mt-3">
-          <p class="text-mute f-12">Số tiền cần chuyển</p>
-          <p class="text-blue text-600 f-15 mt-1">1.400.000 VNĐ</p>
-          <hr class="mt-2 mb-3">
+          <div class="card bg--white mt-4">
+            <div class="card__body">
+              <p class="title-gray text-uppercase mb-2">Số tiền cần vay</p>
+              <p class="text-blue text-600 f-16 mt-1">1.400.000 VNĐ</p>
+              <hr>
 
-          <dl class="row mt-1">
-            <dt class="col-6 text-600 f-15">
-              <p class="text-mute f-12">Ngày vay</p>
-              <p>02/03/2021</p>
-            </dt>
-            <dd class="col-6 text-600 f-15">
-              <p class="text-mute f-12">Ngày vay</p>
-              <p>02/03/2021</p>
-            </dd>
-          </dl>
-          <hr class="mt-2 mb-3">
+              <dl class="row mt-1">
+                <dt class="col-6 f-15">
+                  <p class="title-gray text-uppercase mb-2">Ngày vay</p>
+                  <span class="label-info text-600 f-16">02/03/2021</span>
+                </dt>
+                <dd class="col-6 f-15">
+                  <p class="title-gray text-uppercase mb-2">Ngày trả</p>
+                  <span class="label-green text-600 f-16">02/03/2021</span>
+                </dd>
+              </dl>
+              <hr>
 
-          <dl class="row mt-1">
-            <dt class="col-6 text-600 f-15">
-              <p class="text-mute f-12">Lãi suất</p>
-              <p>18% / năm</p>
-              <p class="text-mute f-12">Phí dịch vụ</p>
-              <p>15,000 VNĐ</p>
-            </dt>
-            <dd class="col-6 text-600 f-15">
-              <p class="text-mute f-12">Tiền lãi</p>
-              <p>1,125 VNĐ</p>
-              <p class="text-mute f-12">Loại hợp đồng</p>
-              <p>Trả gốc && Lãi</p>
-            </dd>
-          </dl>
-          <hr class="mt-2 mb-3">
+              <dl class="row mt-1">
+                <dt class="col-6 f-15">
+                  <p class="title-gray text-uppercase mb-2">Lãi suất</p>
+                  <p class="text-600 f-16">18% / năm</p>
+                  <p class="title-gray text-uppercase mb-2 mt-3">Phí dịch vụ</p>
+                  <p class="text-600 f-16">15,000 VNĐ</p>
+                </dt>
+                <dd class="col-6 f-15">
+                  <p class="title-gray text-uppercase mb-2">Tiền lãi</p>
+                  <p class="text-600 f-16">1,125 VNĐ</p>
+                  <p class="title-gray text-uppercase mb-2 mt-3">Loại hợp đồng</p>
+                  <p class="text-600 f-16">Trả gốc && Lãi</p>
+                </dd>
+              </dl>
+              <hr>
 
-          <p class="text-mute f-12">Tổng số tiền phải trả</p>
-          <p class="text-blue text-600 f-15 mt-1">466,125 VNĐ</p>
+              <p class="title-gray text-uppercase mb-2">Tổng số tiền phải trả</p>
+              <p class="text-blue text-600 f-18 mt-1">466,125 VNĐ</p>
 
-          <a href="loan-confirm.html" class="btn btn-primary my-4">Xác nhận</a>
+              <a href="loan-confirm.html" class="btn btn-primary mt-5 mb-3">Xác nhận</a>
+            </div>
+          </div>
         </div>
     </div>
     <!-- jquery, popper and bootstrap js -->
